@@ -1,53 +1,48 @@
-# Qaboard
+#_Brittany Rausch - Food-Tracker_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _JS-Angular Exercise for Epicodus, 08.12.2016_
 
-## Prerequisites
+#### By _**Brittany Rausch**_
 
-You will need the following things properly installed on your computer.
+## Description
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+_{This is an angular exercise made for Epicodus that takes user inputted food, details, and calories and displays them all in a list. The list can be filtered with a dropdown which allows the user to see foods with calorie totals above or below 500, or all foods. Food items can be edited, and new items can be added.}_
 
-## Installation
+## Setup/Installation Requirements
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* _Go to https://github.com/berausch/food-tracker-angular_
+* _Clone the repository_
+* _Open your terminal and run the following commands if you have never run gulp:_
+* npm install gulp -g
+* _Make sure you have node and npm installed globally
+* _If you don't have typescript installed globally then run:
+* npm install typescript -g
+* _If you want to be able to manipulate the files in atom then run:
+* apm install atom-typescript
+* _Then run the following commands:_
+* npm install
+* bower install
+* gulp build
+* gulp serve
+* _With the last command a browser window should open with the application running if it doesn't open navigate to localhost:3000 with the server running_
 
-## Running / Development
+## Technologies Used
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* _Js_
+* _Typescript_
+* _Angular2_
+* _css_
+* _html_
+* _github api_
+* _Node_
+* _Gulp_
+* _Browserify_
+* _Bower_
+* _Jshint_
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+### License
 
-### Running Tests
+*MIT*
 
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **_Brittany Rausch_**
