@@ -1,0 +1,9 @@
+
+<li>
+  {{#link-to 'answer' answer.id}}{{answer.owner}}'s {{answer.type}} in {{answer.question.questionContent}}{{/link-to}}
+  {{#if isImageShowing }}
+    <p><img src={{answer.image}} alt={{answer.type}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Show image</button>
+    {{/if}}
+</li>
