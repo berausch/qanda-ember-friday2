@@ -1,1 +1,12 @@
-{{outlet}}
+<h1> Welcome to Q and A Message Board!</h1>
+
+Ask away!
+
+<h2> Current Questions </h2>
+
+<ul>
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.questionContent}} - written by {{question.authorQuestion}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+{{new-question saveQuestion='saveQuestion'}}

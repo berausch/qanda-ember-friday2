@@ -1,1 +1,9 @@
-{{yield}}
+<h3>{{question.questionContent}} - asked by {{question.authorQuestion}}</h3>
+
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+<button {{action 'deleteQuestion' question}}>Delete Question</button>
