@@ -1,4 +1,7 @@
 
 <li>
-  {{answer.answerContent}} - answered by {{answer.authorAnswer}}  | <button {{action 'upvoteAnswer' answer}}>Upvote</button>
+  {{#if voteNumber}}
+  <span class="bold">{{answer.votes}}</span>
+  {{/if}}
+  - {{answer.answerContent}} - answered by {{answer.authorAnswer}}  | <button {{action 'upvoteAnswer' answer}}>Upvote</button>
 </li>
