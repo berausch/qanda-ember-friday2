@@ -6,7 +6,7 @@ Ask away!
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.questionContent}} - written by {{question.authorQuestion}}{{/link-to}}</li>
+    <li>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionContent}} - written by {{question.authorQuestion}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question saveQuestion='saveQuestion'}}
