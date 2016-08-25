@@ -4,7 +4,7 @@ export function questionPopularity(params) {
   var question = params[0];
 
   if(question.get('answers').get('length') >= 3) {
-    return Ember.String.htmlSafe('<img src"/assets/images/flame.png">');
+    return Ember.String.htmlSafe('<img class="fire-icon" src="/assets/images/flame.png">');
   }
 
 
