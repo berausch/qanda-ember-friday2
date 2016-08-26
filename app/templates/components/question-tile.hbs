@@ -1,6 +1,11 @@
 <button {{action 'deleteQuestion' question}}>Delete Question</button>
 
-<h3>{{question.questionContent}} - asked by {{question.authorQuestion}}</h3>
+<h3>{{#if favoriteQuestion}}
+  <img {{action 'deleteFavorite' question}} class="star" src="/assets/images/star.png">
+{{else}}
+  <img {{action 'makeFavorite' question}} class="star" src="/assets/images/star-outline.png">
+{{/if}}
+{{question.questionContent}} - asked by {{question.authorQuestion}}</h3>
 <h4>Notes: {{question.notes}}</h4>
 <ul>
   {{#each sortedAnswers as |answer|}}

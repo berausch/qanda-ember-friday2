@@ -6,7 +6,7 @@
 
 ## Description
 
-_{This is an ember exercise made for Epicodus that takes user Questions (along with author, and note information), and allows users to click on that question and be taken to a separate page where they can add answers. There is also the capability to update or delete question content.}_
+_{This is an ember exercise made for Epicodus that takes user Questions (along with author, and note information), and allows users to click on that question and be taken to a separate page where they can add answers. There is also the capability to update or delete question content as well as delete answers. There are symbols (made using helpers) that say whether a question is popular or doesn't have any answers. }_
 
 ## Setup/Installation Requirements
 

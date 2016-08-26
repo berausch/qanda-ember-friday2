@@ -10,7 +10,16 @@ export default Ember.Component.extend({
     } else {
       this.set('voteNumber', true);
     }
-    console.log(this.get('answer.votes'));
+    return this._super();
+  },
+
+  init: function() {
+
+    if(this.get('answer.favorite') === true) {
+      this.set('favoriteAnswer', true);
+    } else {
+      this.set('favoriteAnswer', false);
+    }
     return this._super();
   },
   actions: {
@@ -29,8 +38,14 @@ export default Ember.Component.extend({
       }
     },
     makeFavorite(answer) {
-      this.get('favorites').add(answer);
+      this.set('answer.favorite', true);
+      this.get('favorites').addAnswer(answer);
       this.set('favoriteAnswer', true);
+    },
+    deleteFavorite(answer) {
+      this.set('answer.favorite', false);
+      this.get('favorites').removeAnswer(answer);
+      this.set('favoriteAnswer', false);
     }
 }
 });
