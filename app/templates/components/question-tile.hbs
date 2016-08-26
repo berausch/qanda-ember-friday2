@@ -1,7 +1,7 @@
 <h3>{{question.questionContent}} - asked by {{question.authorQuestion}}</h3>
 <h4>Notes: {{question.notes}}</h4>
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
   <li>
     {{answer-tile answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
   </li>
