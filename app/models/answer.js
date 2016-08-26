@@ -5,4 +5,5 @@ export default DS.Model.extend({
  authorAnswer: DS.attr(),
  question: DS.belongsTo('question', {async: true}),
  votes: DS.attr()
+
 });

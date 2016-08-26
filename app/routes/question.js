@@ -2,6 +2,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  questionAnswer: [],
+
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
@@ -27,6 +29,17 @@ export default Ember.Route.extend({
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
+    },
+    destroyAnswer(answer) {
+      answer.destroyRecord();
+    },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key) {
+         if(params[key]!==undefined) {
+           answer.set(key,params[key]);
+         }
+       });
+      answer.save();
     }
   }
 });

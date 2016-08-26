@@ -2,7 +2,9 @@
 <h4>Notes: {{question.notes}}</h4>
 <ul>
   {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
+  <li>
+    {{answer-tile answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
+  </li>
   {{/each}}
 </ul>
 

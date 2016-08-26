@@ -1,7 +1,8 @@
 
-<li>
-  {{#if voteNumber}}
-  <span class="bold">{{answer.votes}}</span>
-  {{/if}}
-  - {{answer.answerContent}} - answered by {{answer.authorAnswer}}  | <button {{action 'upvoteAnswer' answer}}>Upvote</button>
-</li>
+
+
+  {{answer.answerContent}} - answered by {{answer.authorAnswer}} |  {{#if voteNumber}}
+    <span class="bold">{{answer.votes}} votes</span>
+    {{/if}}
+
+  <button {{action 'deleteAnswer' answer}}class="delete-button"> Delete Answer</button> | <button {{action 'upvoteAnswer' answer}}>Upvote</button>

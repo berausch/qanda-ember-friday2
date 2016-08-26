@@ -13,10 +13,10 @@ module.exports = function(environment) {
       }
     },
     firebase: {
-      apiKey: "AIzaSyA9pSSBp8pdpk_zxQDNjWcyhKO1LcruOcM",
-      authDomain: "qa-board-cd39c.firebaseapp.com",
-      databaseURL: "https://qa-board-cd39c.firebaseio.com",
-      storageBucket: "qa-board-cd39c.appspot.com",
+      apiKey: "AIzaSyAKpq-Qp5QIymPPa4zyCYHoNJuB1X2-LS8",
+      authDomain: "qa-board-2.firebaseapp.com",
+      databaseURL: "https://qa-board-2.firebaseio.com",
+      storageBucket: "qa-board-2.appspot.com",
    },
 
     APP: {
