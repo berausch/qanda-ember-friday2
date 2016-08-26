@@ -1,3 +1,5 @@
+<button {{action 'deleteQuestion' question}}>Delete Question</button>
+
 <h3>{{question.questionContent}} - asked by {{question.authorQuestion}}</h3>
 <h4>Notes: {{question.notes}}</h4>
 <ul>
@@ -7,5 +9,3 @@
   </li>
   {{/each}}
 </ul>
-
-<button {{action 'deleteQuestion' question}}>Delete Question</button>

@@ -1,6 +1,10 @@
 
 
-
+{{#if favoriteAnswer}}
+  <img {{action 'deleteFavorite' answer}} class="star" src="/assets/images/star.png">
+{{else}}
+  <img {{action 'makeFavorite' answer}} class="star" src="/assets/images/star-outline.png">
+{{/if}}
   {{answer.answerContent}} - answered by {{answer.authorAnswer}} |  {{#if voteNumber}}
     <span class="bold">{{answer.votes}} votes</span>
     {{/if}}

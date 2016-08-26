@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favorites: Ember.inject.service(),
+  favoriteAnswer: false,
   voteNumber: false,
   init: function() {
     if(this.get('answer.votes') === 0) {
@@ -26,5 +28,9 @@ export default Ember.Component.extend({
         this.sendAction('deleteAnswer', answer);
       }
     },
+    makeFavorite(answer) {
+      this.get('favorites').add(answer);
+      this.set('favoriteAnswer', true);
+    }
 }
 });
